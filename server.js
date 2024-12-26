@@ -35,3 +35,8 @@ io.on('connection', (socket) => {
         socket.broadcast.emit('user-left', socket.id);
     });
 });
+
+// Start the server
+server.listen(3000, () => {
+    console.log('Server is running on http://localhost:3000');
+});
