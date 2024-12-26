@@ -96,3 +96,26 @@ document.getElementById('sendFileButton').addEventListener('click', async () => 
   };
   reader.readAsArrayBuffer(file);
 });
+
+// Handle signaling messages from the server
+socket.on('signal', async (data) => {
+  console.log('Received signal:', data);
+  const { sender, signal } = data;
+
+  if (!peerConnections[sender]) {
+      peerConnections[sender] = createPeerConnection(sender);
+  }
+
+  const pc = peerConnections[sender];
+
+  await pc.setRemoteDescription(signal);
+
+  if (signal.type === 'offer') {
+      const answer = await pc.createAnswer();
+      await pc.setLocalDescription(answer);
+      socket.emit('signal', {
+          target: sender,
+          signal: pc.localDescription,
+      });
+  }
+});
