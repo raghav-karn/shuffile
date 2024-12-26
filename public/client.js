@@ -9,3 +9,12 @@ socket.emit('join-room', room);
 
 // Store peer connections
 const peerConnections = {};
+
+// Create a STUN server configuration
+const configuration = {
+    iceServers: [
+        {
+            urls: 'stun:stun.l.google.com:19302', // Google's public STUN server
+        }
+    ]
+  };  
