@@ -119,3 +119,12 @@ socket.on('signal', async (data) => {
       });
   }
 });
+
+// Function to download the received file
+function downloadFile(data) {
+  const blob = new Blob([data], { type: 'application/octet-stream' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = 'received_file'; // Name of the received file
+  link.click();
+}
