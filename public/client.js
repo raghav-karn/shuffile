@@ -66,3 +66,33 @@ function createPeerConnection(targetId) {
 
   return pc;
 }
+
+// Handle the "send file" button click event
+document.getElementById('sendFileButton').addEventListener('click', async () => {
+  const file = document.getElementById('fileInput').files[0];
+  if (!file) {
+      console.log('No file selected!');
+      return;
+  }
+
+  console.log('Sending file:', file);
+
+  // Read the file as an ArrayBuffer
+  const reader = new FileReader();
+  reader.onload = () => {
+      const data = reader.result;
+
+      // Log the file data to make sure it’s read correctly
+      console.log('File data:', data);
+
+      // Send the file data via the data channels of all peers
+      Object.values(peerConnections).forEach((pc) => {
+          const dataChannel = pc.createDataChannel('fileTransfer');
+          dataChannel.onopen = () => {
+              console.log('Data channel is open, sending file...');
+              dataChannel.send(data); // Send the file data
+          };
+      });
+  };
+  reader.readAsArrayBuffer(file);
+});
