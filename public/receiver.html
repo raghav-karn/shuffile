@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Share your files with shuffile</h2>
+                <div class="form-input">
+                    <label for="join-id">Join ID</label>
+                    <input type="text" id="join-id">
+                </div>
+                <div class="form-input">
+                    <button id="receiver-start-con-btn">Connect</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://cdnis.cloudflare.com/ajax/libs/downloadjs/1.4.1/download.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="receiver.js"></script>
