@@ -21,4 +21,26 @@
 		document.querySelector(".fs-screen").classList.add("active");
 	});
 
+	let fileShare = {};
+
+	socket.on("fs-meta",function(metadata){
+		fileShare.metadata = metadata;
+		fileShare.transmitted = 0;
+		fileShare.buffer = [];
+
+		let el = document.createElement("div");
+		el.classList.add("item");
+		el.innerHTML = `
+				<div class="progress">0%</div>
+				<div class="filename">${metadata.filename}</div>
+		`;
+		document.querySelector(".files-list").appendChild(el);
+
+		fileShare.progrss_node = el.querySelector(".progress");
+
+		socket.emit("fs-start",{
+			uid:sender_uid
+		});
+	});
+	
 })();
