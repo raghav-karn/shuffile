@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   overflow: hidden;
   overflow-x: hidden;
-  background-image: linear-gradient(to top, #11111b 0%, #11111b 100%);
+  background-image: linear-gradient(to top, #6c5977 0%, #11111b 100%);
   background-position: center;
   background-size: cover;
   padding: 20px;
