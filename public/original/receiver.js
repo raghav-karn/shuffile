@@ -46,7 +46,7 @@
 	socket.on("fs-share", function (buffer) {
 		fileShare.buffer.push(buffer);
 		fileShare.transmitted += buffer.byteLength;
-		fileShare.progrss_node.innerText = Math.trunc(fileShare.transmitted / fileShare.metadata.total_buffer_size * 100) + '%';
+		fileShare.progrss_node.innerText = Math.trunc(fileShare.transmitted / fileShare.metadata.total_buffer_size * 100);
 		if (fileShare.transmitted == fileShare.metadata.total_buffer_size) {
 			download(new Blob(fileShare.buffer), fileShare.metadata.filename);
 			fileShare = {};

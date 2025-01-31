@@ -7,7 +7,7 @@
   <title>Shuffile</title>
   <link rel="icon" type="image/x-icon" href="" />
 
-  <link rel="stylesheet" href="test.css" />
+  <link rel="stylesheet" href="style.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,18 +27,18 @@
         </svg>
       </button>
       <div class="app-name">Shuffile</div>
-      <a href="test.html" class="item-link active" id="pageLink" title="Home">
+      <a href="index.html" class="item-link" id="pageLink" title="Home">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-grid" viewBox="0 0 24 24">
           <defs />
           <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z" />
         </svg>
       </a> 
-      <a href="../sender.html" class="item-link" id="pageLink" title="Send files">
+      <a href="../index.html" class="item-link" id="pageLink" title="Send files">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="feather bi bi-share" viewBox="-3 -3 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
           <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/>
         </svg>
       </a>
-      <a href="../sender.html" class="item-link" id="pageLink" title="Send files">
+      <a href="../index.html" class="item-link active" id="pageLink" title="Send files">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle" style="transform: rotate(180deg);">
           <circle cx="12" cy="12" r="10"/>
           <polyline points="8 12 12 16 16 12"/>
@@ -62,70 +62,41 @@
     </div>
 
     <!-- MAIN AREA -->    
-    <div class="main-area">
+    <div class="app">
       <button class="btn-show-right-area">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"/></svg>
       </button>
       <button class="btn-show-left-area">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
-      <section class="content-section">
-        <h1 class="section-header">Quick Access</h1>
-        <div class="access-links">
-          <div class="access-link-wrapper">
-            <div class="access-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-share" viewBox="-3 -3 24 24">
-                <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/>
-              </svg>
-            </div>
-            <span class="access-text">Share files</span>
+
+      <div class="screen join-screen active">
+          <div class="form">
+              <h2>Send your files with Shuffile™</h2>
+              <div class="form-input">
+                  <button id="sender-start-con-btn">Create room</button>
+              </div>
+              <div class="form-input" id="join-id">
+              </div>
           </div>
-          <div class="access-link-wrapper">
-            <div class="access-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle" style="transform: rotate(180deg);">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="8 12 12 16 16 12"/>
-                <line x1="12" y1="8" x2="12" y2="16"/>
-              </svg>
-            </div>
-            <span class="access-text">Send files</span>
+      </div>
+      <div class="screen fs-screen ">
+        <div class="buff" style="top: 30%"></div>
+          <div class="file-input">
+              <label for="file-input" style="cursor: pointer;">
+                  Click here to select files for sharing
+              </label>
+              <input type="file" id="file-input">
           </div>
-          <div class="access-link-wrapper">
-            <div class="access-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="8 12 12 16 16 12"/>
-                <line x1="12" y1="8" x2="12" y2="16"/>
-              </svg>
-            </div>
-            <span class="access-text">Receive files</span>
-          </div>
-        </div>
-      </section>
-      <section class="content-section">
-        <div class="section-header-wrapper">
-          <h1 class="section-header">All Files</h1>
-        </div>
-        <div class="files-table">
-          <div class="files-table-header">
-            <div class="column-header table-cell">Name</div>
-            <div class="column-header table-cell size-cell">Size</div>
-          </div>
-          <div class="files-table-row">
-            <div class="table-cell name-cell pdf">FILE.pdf</div>
-            <div class="table-cell">4.20 MB</div>
-          </div>
-          <div class="files-table-row">
-            <div class="table-cell name-cell jpg">IMAGE.jpg</div>
-            <div class="table-cell size-cell">500 KB</div>
-          </div>
-        </div>
-      </section>
+          <div class="files-list">
+              <div class="title">Shared files:</div>
+          </div>  
+      </div>
     </div>
 
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="test.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="sender.js"></script>
 </body>
 </html>
