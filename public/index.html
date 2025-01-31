@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
 
-  <title>Shuffile</title>
+  <title>Shuffile | Home</title>
   <link rel="icon" type="image/x-icon" href="" />
 
   <link rel="stylesheet" href="style.css" />
@@ -33,19 +33,19 @@
           <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z" />
         </svg>
       </a> 
-      <a href="share.html" class="item-link" id="pageLink" title="Share links">
+      <a href="share.html" class="item-link" id="pageLink" title="Links">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="feather bi bi-share" viewBox="-3 -3 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
           <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/>
         </svg>
       </a>
-      <a href="sender.html" class="item-link" id="pageLink" title="Send files">
+      <a href="sender.html" class="item-link" id="pageLink" title="Send">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle" style="transform: rotate(180deg);">
           <circle cx="12" cy="12" r="10"/>
           <polyline points="8 12 12 16 16 12"/>
           <line x1="12" y1="8" x2="12" y2="16"/>
         </svg>
       </a>
-      <a href="receiver.html" class="item-link" id="pageLink" title="Receive files">
+      <a href="receiver.html" class="item-link" id="pageLink" title="Receive">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle">
           <circle cx="12" cy="12" r="10"/>
           <polyline points="8 12 12 16 16 12"/>
@@ -110,20 +110,15 @@
       </section>
       <section class="content-section">
         <div class="section-header-wrapper">
-          <h1 class="section-header">All Files</h1>
+          <h1 class="section-header">About</h1>
         </div>
         <div class="files-table">
           <div class="files-table-header">
-            <div class="column-header table-cell">Name</div>
-            <div class="column-header table-cell size-cell">Size</div>
-          </div>
-          <div class="files-table-row">
-            <div class="table-cell name-cell pdf">FILE.pdf</div>
-            <div class="table-cell">4.20 MB</div>
-          </div>
-          <div class="files-table-row">
-            <div class="table-cell name-cell jpg">IMAGE.jpg</div>
-            <div class="table-cell size-cell">500 KB</div>
+            <div class="column-header table-cell">
+              Welcome to Shuffile by Raghav Karn. Shuffile is a end-to-end files sharing app meant for quick sharing of small files like small images, gifs, text files and more.
+              <br><br>
+              You can use Shuffile to create password-protected links to share, or transfer files directly to another user on Shuffile with hands-free ease!  There is no hard limit on the file size, but speed drastically decreases for files of sizes more than 10MB.
+            </div>
           </div>
         </div>
       </section>
@@ -131,6 +126,9 @@
 
   </div>
 
+  <script src="app.js"></script>
+  <script src="sender.js"></script>
+  <script src="receiver.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>

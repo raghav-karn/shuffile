@@ -97,7 +97,7 @@ a {
   transition: 0.2s;
 }
 .item-link.active {
-  color: #cba6f7;
+  color: #ff9bc9;
 }
 
 .btn-logout {
@@ -190,11 +190,11 @@ a {
 	margin: 10px 0px;
 }
 .join-screen .form h2 {
-    font-size: 28px;
+    font-size: 36px;
     line-height: 32px;
     margin-bottom: 16px;
     color: #c9d5f0;
-    font-family: 'Sixtyfour';  
+    font-family: 'doto';  
 }
 .join-screen .form button {
 	background: #7373af;
@@ -208,6 +208,7 @@ a {
 	outline: none;
 	cursor: pointer;
 	transition: 300ms;
+  font-family: monospace;
 }
 .join-screen .form button:hover {
 	opacity:100%;
@@ -217,6 +218,8 @@ a {
 	color: #c9d5f0;
 	display: block;
 	margin-top: 20px;
+  font-family: monospace;
+  font-size: 18px;
 }
 .join-screen .form #join-id span {
 	display: inline-block;
@@ -226,12 +229,14 @@ a {
 	padding: 10px;
 	border: 1px solid #c9d5f0;
 	margin-top: 5px;
+  border-radius: 10px;
+  background-color: #3E4157;
 }
 
 input {
   font-family: monospace;
   background-color: #3e4157;
-  box-radius: 10px;
+  border-radius: 10px;
 }
 .join-screen .form label {
 	color: #c9d5f0;
@@ -288,7 +293,7 @@ input {
 	font-size: 24px;
 	color: #c9d5f0;
 	margin-bottom: 20px;
-  font-family: 'Sixtyfour';
+  font-family: 'Doto';
 }
 .fs-screen .files-list .item {
 	width: 33.33%;
@@ -306,6 +311,7 @@ input {
 }
 .fs-screen .files-list .item .filename {
 	font-size: 10px;
+  text-align: center;
 	padding: 5px;
 	border-top: 1px solid #eee;
   color: #c9d5f0;
@@ -328,7 +334,7 @@ input {
   line-height: 32px;
   margin-bottom: 16px;
   color: #fff;
-  font-family: 'Sixtyfour';
+  font-family: 'doto';
 }
 .section-header-wrapper {
   display: flex;
@@ -385,7 +391,7 @@ input {
   padding: 8px;
 }
 .access-link-wrapper-1 .access-icon {
-  background-color: #ea999c;
+  background-color: #999eea;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -401,7 +407,7 @@ input {
 }
 
 .access-link-wrapper-1:hover .access-icon:hover {
-  background-color: #91494c;
+  background-color: #495091;
   transition: 0.2s;
 }
 .access-link-wrapper-2:hover .access-icon:hover {
@@ -439,17 +445,17 @@ input {
 
 .table-cell {
   display: table-cell;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 16px;
-  color: #c9d5f0;
+  color: #dce5fc;
   padding: 8px;
-  font-family: 'Doto';
+  font-family: monospace;
 }
 
 .column-header {
   font-size: 12px;
   line-height: 16px;
-  color: #888da9;
+  color: #c0c6ec;
 }
 
 .name-cell {

@@ -32,7 +32,7 @@
 		el.classList.add("item");
 		el.innerHTML = `
 				<div class="progress">0%</div>
-				<div class="filename">${metadata.filename}</div>
+				<div class="filename">${metadata.filename} (${(fileShare.metadata.total_buffer_size/(1024*1024)).toFixed(3)} MB)</div>
 		`;
 		document.querySelector(".files-list").appendChild(el);
 

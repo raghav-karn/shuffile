@@ -37,7 +37,7 @@
 			el.classList.add("item");
 			el.innerHTML = `
 					<div class="progress">0%</div>
-					<div class="filename">${file.name}</div>
+					<div class="filename">${file.name} (${(buffer.length/(1024*1024)).toFixed(3)} MB)</div>
 			`;
 			document.querySelector(".files-list").appendChild(el);
 			shareFile({
